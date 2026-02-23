@@ -1023,6 +1023,12 @@ footer {
         display: block;
     }
 
+    /* Move theme toggle to left so it doesn't overlap hamburger */
+    .theme-toggle {
+        right: auto;
+        left: 20px;
+    }
+
     main {
         margin-right: 0;
     }
@@ -1033,6 +1039,7 @@ footer {
 
     .hero-section {
         padding: 60px 30px;
+        padding-top: 80px;
     }
 
     .section {
@@ -1046,6 +1053,15 @@ footer {
     .name h2 {
         font-size: clamp(22px, 4vw, 40px);
     }
+
+    /* Skills */
+    .skills-cards {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .soft-skills-grid {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 /* ========================================
@@ -1053,56 +1069,81 @@ footer {
    ======================================== */
 @media (max-width: 640px) {
     .hero-section {
-        padding: 40px 20px;
+        padding: 30px 16px;
         min-height: auto;
-        padding-top: 80px;
+        padding-top: 70px;
     }
 
     .section {
-        padding: 50px 20px;
+        padding: 40px 16px;
         min-height: auto;
     }
 
     .section-title {
-        font-size: 32px;
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+
+    /* Hero */
+    .name h1 {
+        font-size: 28px;
+    }
+
+    .name h2 {
+        font-size: 20px;
     }
 
     .information {
         flex-direction: column;
-        gap: 8px;
+        gap: 6px;
+    }
+
+    .information span {
+        font-size: 13px;
     }
 
     .about p {
-        font-size: 15px;
+        font-size: 14px;
+    }
+
+    .links {
+        gap: 12px;
     }
 
     .links>a {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    /* Education */
+    .edu-card {
+        flex-direction: column;
+        gap: 14px;
+        padding: 20px;
+    }
+
+    .edu-icon {
         width: 42px;
         height: 42px;
         font-size: 18px;
     }
 
-    /* Timeline */
-    .timeline {
-        padding-left: 20px;
+    .edu-info h2 {
+        font-size: 17px;
     }
 
-    .timeline-header {
-        flex-direction: column;
-        gap: 4px;
-    }
-
-    .timeline-content {
-        padding: 18px 20px;
-    }
-
-    .timeline-header h2 {
-        font-size: 18px;
+    .edu-coursework {
+        font-size: 12px;
     }
 
     /* Experience */
     .experience-card {
-        padding: 20px;
+        padding: 18px;
+    }
+
+    .exp-header h2 {
+        font-size: 18px;
     }
 
     .exp-meta {
@@ -1111,18 +1152,66 @@ footer {
         gap: 4px;
     }
 
+    .exp-desc {
+        font-size: 13px;
+    }
+
     .clubs-grid {
         grid-template-columns: 1fr;
     }
 
+    .club-card {
+        padding: 20px;
+    }
+
+    .role-info {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2px;
+    }
+
     /* Skills */
-    .skill-grid {
-        grid-template-columns: repeat(2, 1fr);
+    .skills-cat-title {
+        font-size: 18px;
+    }
+
+    .skills-cards {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .skill-card {
+        padding: 18px;
+    }
+
+    .skill-card-header h3 {
+        font-size: 14px;
+    }
+
+    .skill-tags {
+        gap: 6px;
+    }
+
+    .skill-tag {
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+
+    .soft-skills-grid {
+        grid-template-columns: 1fr;
         gap: 12px;
     }
 
-    .skill-box {
-        padding: 18px 14px;
+    .soft-skill-item {
+        padding: 14px 16px;
+    }
+
+    .soft-skill-item>i {
+        font-size: 18px;
+    }
+
+    .soft-skill-item p {
+        font-size: 13px;
     }
 
     /* Volunteer */
@@ -1130,7 +1219,19 @@ footer {
         grid-template-columns: 1fr;
     }
 
-    /* Certs */
+    .volunteer-card {
+        padding: 20px;
+    }
+
+    .volunteer-card h2 {
+        font-size: 16px;
+    }
+
+    .volunteer-card p {
+        font-size: 13px;
+    }
+
+    /* Certifications */
     .cert-card {
         flex-direction: column;
         align-items: center;
@@ -1143,17 +1244,49 @@ footer {
         max-width: 200px;
     }
 
+    .cert-pdf-placeholder {
+        width: 100%;
+        max-width: 200px;
+    }
+
     .cert-info ul {
         align-items: center;
     }
 
     /* Contact */
     .contact-grid {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .contact-card {
+        padding: 20px 16px;
+    }
+
+    .contact-card>i {
+        font-size: 24px;
     }
 
     /* Footer */
     footer {
-        padding: 24px 20px;
+        padding: 20px 16px;
+        font-size: 13px;
+    }
+
+    /* Theme toggle — keep on left, smaller */
+    .theme-toggle {
+        top: 16px;
+        left: 16px;
+        width: 30px;
+        height: 30px;
+        font-size: 13px;
+    }
+
+    /* Hamburger — slightly smaller */
+    .nav-toggle {
+        top: 16px;
+        right: 16px;
+        width: 42px;
+        height: 42px;
     }
 }
