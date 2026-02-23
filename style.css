@@ -90,6 +90,21 @@ body {
     color: var(--text-primary);
     line-height: 1.7;
     overflow-x: hidden;
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* Ensure all interactive elements are tappable on mobile */
+a,
+button,
+.links>a,
+.contact-card,
+.vol-link,
+.cert-card a,
+.nav-text>a {
+    touch-action: manipulation;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
 }
 
 /* ========================================
@@ -220,11 +235,13 @@ nav {
     backdrop-filter: blur(4px);
     z-index: 90;
     opacity: 0;
+    pointer-events: none;
     transition: opacity var(--transition);
 }
 
 .nav-overlay.show {
     opacity: 1;
+    pointer-events: auto;
 }
 
 /* ========================================
@@ -338,6 +355,8 @@ main {
     align-items: center;
     justify-content: center;
     border-radius: var(--radius-sm);
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
     background: var(--bg-glass);
     border: 1px solid var(--border);
     color: var(--text-secondary);
