@@ -1260,13 +1260,13 @@ footer {
 
     .cert-thumbnail {
         width: 100%;
-        max-width: 200px;
+        max-width: none;
     }
 
     .cert-pdf-placeholder {
         width: 100%;
-        max-width: 280px;
-        height: 120px;
+        max-width: none;
+        height: 140px;
     }
 
     .cert-info ul {
