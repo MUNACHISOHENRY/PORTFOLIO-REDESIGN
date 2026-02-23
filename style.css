@@ -1258,15 +1258,17 @@ footer {
         padding: 20px;
     }
 
-    .cert-thumbnail {
+    .cert-card .cert-thumbnail {
         width: 100%;
         max-width: none;
+        flex-shrink: 1;
     }
 
-    .cert-pdf-placeholder {
+    .cert-card .cert-pdf-placeholder {
         width: 100%;
         max-width: none;
         height: 140px;
+        flex-shrink: 1;
     }
 
     .cert-info ul {
