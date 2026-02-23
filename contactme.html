@@ -1,4 +1,126 @@
-<h1>CONTACT ME</h1>
-<p>Number: +2348054011156</p>
-<p>Email: munachikachi@gmail.com</p>
-<p>Address: Navigate Avenue</p>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact — Munachiso Henry</title>
+    <meta name="description" content="Get in touch with Munachiso Henry Chika-Ekweghariri.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Kanit:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        :root {
+            --bg-primary: #0f172a;
+            --bg-card: rgba(30, 41, 59, 0.7);
+            --accent: #10b981;
+            --accent-secondary: #06b6d4;
+            --text-primary: #f1f5f9;
+            --text-secondary: #94a3b8;
+            --border: rgba(255, 255, 255, 0.06);
+            --border-accent: rgba(16, 185, 129, 0.3);
+            --radius: 16px;
+            --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+        }
+
+        body {
+            font-family: "Inter", sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 30px;
+        }
+
+        .contact-wrapper {
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+        }
+
+        h1 {
+            font-family: "Kanit", sans-serif;
+            font-size: 42px;
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--accent), var(--accent-secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 30px;
+        }
+
+        .contact-item {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 20px;
+            margin-bottom: 14px;
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            transition: var(--transition);
+            color: var(--text-primary);
+        }
+
+        .contact-item:hover {
+            border-color: var(--border-accent);
+            transform: translateY(-2px);
+        }
+
+        .contact-item i {
+            font-size: 22px;
+            color: var(--accent);
+        }
+
+        .contact-item p {
+            color: var(--text-secondary);
+            font-size: 16px;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 24px;
+            color: var(--accent);
+            font-size: 14px;
+            font-weight: 500;
+            transition: var(--transition);
+        }
+
+        .back-link:hover {
+            color: var(--accent-secondary);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contact-wrapper">
+        <h1>CONTACT ME</h1>
+        <div class="contact-item">
+            <i class="bi bi-telephone-fill"></i>
+            <p>+2348054011156</p>
+        </div>
+        <div class="contact-item">
+            <i class="bi bi-envelope-fill"></i>
+            <p>munachikachi@gmail.com</p>
+        </div>
+        <div class="contact-item">
+            <i class="bi bi-geo-alt-fill"></i>
+            <p>Navigate Avenue</p>
+        </div>
+        <a href="./index.html" class="back-link"><i class="bi bi-arrow-left"></i> Back to Portfolio</a>
+    </div>
+</body>
+
+</html>
