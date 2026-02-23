@@ -900,7 +900,7 @@ main {
 
 .cert-pdf-placeholder {
     width: 140px;
-    height: 180px;
+    height: 100px;
     border-radius: var(--radius-sm);
     background: rgba(16, 185, 129, 0.08);
     border: 1px dashed rgba(16, 185, 129, 0.3);
@@ -1265,7 +1265,8 @@ footer {
 
     .cert-pdf-placeholder {
         width: 100%;
-        max-width: 200px;
+        max-width: 280px;
+        height: 120px;
     }
 
     .cert-info ul {
